@@ -6,3 +6,6 @@ matplotlib
 pandas
 numpy
 Pillow
+streamlit
+tensorflow
+opencv-python-headless
