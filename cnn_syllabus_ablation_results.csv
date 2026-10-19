@@ -2,8 +2,8 @@ Experiment,Conv Layers,Filters,Kernel,Pooling,Activation,Head (Syllabus),LR / Ba
 "Exp 1: Baseline (2-Conv, 3x3, Max, MLP)",2,32,3x3,max,relu,MLP,0.001 / 32,0.8833,0.882,0.8779,0.878
 Exp 2: Deeper CNN (3-Conv Layers),3,32,3x3,max,relu,MLP,0.001 / 32,0.8967,0.9064,0.9035,0.8975
 Exp 3: Wider Kernel (5x5 Kernel),2,32,5x5,max,relu,MLP,0.001 / 32,0.86,0.8521,0.8572,0.8537
-Exp 4: Average Pooling (Week 10),2,32,3x3,avg,relu,MLP,0.001 / 32,0.88,0.886,0.8847,0.8818
+Exp 4: Average Pooling,2,32,3x3,avg,relu,MLP,0.001 / 32,0.88,0.886,0.8847,0.8818
 Exp 5: Strided Conv Downsampling,2,32,3x3,strided,relu,MLP,0.001 / 32,0.8867,0.8846,0.8826,0.8835
-Exp 6: Tanh Activation (Week 2),2,32,3x3,max,tanh,MLP,0.001 / 32,0.83,0.8309,0.8347,0.8273
-Exp 7: Single-Layer Perceptron (Week 4),2,32,3x3,max,relu,PERCEPTRON,0.001 / 32,0.89,0.8901,0.8912,0.8889
-Exp 8: RBF Network Head (Weeks 7-8),2,32,3x3,max,relu,RBF,0.001 / 32,0.6567,0.5558,0.6664,0.6008
+Exp 6: Tanh Activation,2,32,3x3,max,tanh,MLP,0.001 / 32,0.83,0.8309,0.8347,0.8273
+Exp 7: Single-Layer Perceptron,2,32,3x3,max,relu,PERCEPTRON,0.001 / 32,0.89,0.8901,0.8912,0.8889
+Exp 8: RBF Network Head,2,32,3x3,max,relu,RBF,0.001 / 32,0.6567,0.5558,0.6664,0.6008

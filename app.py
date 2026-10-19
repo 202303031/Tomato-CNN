@@ -192,7 +192,7 @@ def visualize_pooling_and_weights(model, img_tensor):
         axes[2, i].set_title(f"Filter #{i+1}: Avg Pool (32x32)", fontsize=9)
         axes[2, i].axis("off")
 
-    plt.suptitle("Weeks 9 & 10: Feature Extraction (Conv1) vs. Max Pooling vs. Average Pooling", fontweight="bold")
+    plt.suptitle("Feature Extraction (Conv1) vs. Max Pooling vs. Average Pooling", fontweight="bold")
     plt.tight_layout()
 
     fig_w, axes_w = plt.subplots(2, 4, figsize=(10, 4.5))
@@ -203,7 +203,7 @@ def visualize_pooling_and_weights(model, img_tensor):
         axes_w[r, c].imshow(k_w)
         axes_w[r, c].set_title(f"Kernel #{i+1} Weights\nMean={weights[i].mean():.3f}", fontsize=8)
         axes_w[r, c].axis("off")
-    plt.suptitle("Week 9: Learned 3x3 RGB Convolutional Filter Weights", fontweight="bold")
+    plt.suptitle("Learned 3x3 RGB Convolutional Filter Weights", fontweight="bold")
     plt.tight_layout()
     return fig, fig_w
 
@@ -220,12 +220,12 @@ def visualize_rbf_activations(rbf_model, img_tensor):
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11, 4))
     ax1.bar(range(1, len(dists)+1), dists, color="#e74c3c", alpha=0.85)
-    ax1.set_title("Weeks 7-8: Euclidean Distance ||x - c_k|| to 32 RBF Centers", fontsize=10, fontweight="bold")
+    ax1.set_title("Euclidean Distance ||x - c_k|| to 32 RBF Centers", fontsize=10, fontweight="bold")
     ax1.set_xlabel("RBF Prototype Center Index (k = 1..32)")
     ax1.set_ylabel("Euclidean Distance")
 
     ax2.bar(range(1, len(rbf_acts)+1), rbf_acts, color="#2ecc71", alpha=0.85)
-    ax2.set_title("Weeks 7-8: Gaussian RBF Node Activations exp(-gamma * ||x - c_k||^2)", fontsize=10, fontweight="bold")
+    ax2.set_title("Gaussian RBF Node Activations exp(-gamma * ||x - c_k||^2)", fontsize=10, fontweight="bold")
     ax2.set_xlabel("RBF Structural Node Index (k = 1..32)")
     ax2.set_ylabel("Gaussian Activation Strength")
     plt.tight_layout()
@@ -263,7 +263,7 @@ def run_full_pipeline_ui(input_pil, selected_head, bam_noise_pct):
     ax_b[2].imshow(x_rec.reshape(16, 16), cmap="gray")
     ax_b[2].set_title("BAM Reconstructed")
     for a in ax_b: a.axis("off")
-    plt.suptitle("Week 3: Bidirectional Associative Memory (BAM) Live Pattern Recall", fontweight="bold")
+    plt.suptitle("Bidirectional Associative Memory (BAM) Live Pattern Recall", fontweight="bold")
     plt.tight_layout()
 
     summary_md = f"""
@@ -278,15 +278,15 @@ unseen_sample_paths = glob.glob(os.path.join("tomato_unseen", "*", "*.*"))[:10]
 with gr.Blocks(theme=gr.themes.Soft(), title="Tomato CNN Offline Inspector") as demo:
     gr.Markdown(
         """
-        # 🍅 Tomato Leaf Disease Detection & 10-Week Neural Network Inspector (Offline Local Edition)
-        Upload any unseen tomato leaf image or click a bundled sample below to run **Disease Detection (Bounding Box + Grad-CAM Heatmap)** and inspect **Learned Conv Weights (Week 9)**, **Max vs. Average Pooling (Week 10)**, **RBF Network Prototype Centers (Weeks 7-8)**, and **BAM Associative Memory (Week 3)**.
+        # 🍅 Tomato Leaf Disease Detection & Neural Network Inspector (Offline Local Edition)
+        Upload any unseen tomato leaf image or click a bundled sample below to run **Disease Detection (Bounding Box + Grad-CAM Heatmap)** and inspect **Learned Conv Weights**, **Max vs. Average Pooling**, **RBF Network Prototype Centers**, and **BAM Associative Memory**.
         """
     )
     with gr.Row():
         with gr.Column(scale=1):
             img_input = gr.Image(type="pil", label="Upload Unseen Tomato Leaf Image")
-            head_selector = gr.Radio(choices=["mlp", "rbf", "perceptron"], value="mlp", label="Select Syllabus Classification Head (Weeks 4-8)")
-            noise_slider = gr.Slider(0, 45, value=20, step=5, label="Week 3 BAM Bit-Flip Noise (%)")
+            head_selector = gr.Radio(choices=["mlp", "rbf", "perceptron"], value="mlp", label="Select Syllabus Classification Head")
+            noise_slider = gr.Slider(0, 45, value=20, step=5, label="BAM Bit-Flip Noise (%)")
             run_btn = gr.Button("🔍 Run Full Detection & Syllabus Pipeline", variant="primary")
             if unseen_sample_paths:
                 gr.Examples(examples=unseen_sample_paths, inputs=img_input, label="Bundled Unseen Test Images (Offline):")
@@ -299,15 +299,15 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Tomato CNN Offline Inspector") as 
             prob_output = gr.Label(num_top_classes=5, label="3. Disease Class Confidence Scores")
 
     with gr.Tabs():
-        with gr.TabItem("Weeks 9 & 10: Max vs. Avg Pooling & Feature Maps"):
+        with gr.TabItem("Max vs. Avg Pooling & Feature Maps"):
             pool_plot = gr.Plot(label="Comparison of Conv Output, Max Pooling, and Average Pooling")
-        with gr.TabItem("Week 9: Learned 3x3 Kernel Weights"):
+        with gr.TabItem("Learned 3x3 Kernel Weights"):
             weights_plot = gr.Plot(label="Learned RGB Filter Weights from Conv Layer 1")
-        with gr.TabItem("Weeks 7 & 8: RBF Network Prototype Centers"):
+        with gr.TabItem("RBF Network Prototype Centers"):
             rbf_plot = gr.Plot(label="Euclidean Distance & Gaussian RBF Activations")
-        with gr.TabItem("Week 3: BAM Associative Memory Recall"):
+        with gr.TabItem("BAM Associative Memory Recall"):
             bam_plot = gr.Plot(label="Bidirectional Associative Memory Denoising")
-        with gr.TabItem("Weeks 1-10: Full Hyperparameter Ablation Table"):
+        with gr.TabItem("Full Hyperparameter Ablation Table"):
             gr.Dataframe(value=df_results, label="Experimental Comparison Across All 8 Configurations")
 
     run_btn.click(
