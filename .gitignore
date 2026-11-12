@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+
+# Raw dataset (downloaded via kagglehub)
+data/raw/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# IDE / editor
+.claude/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/

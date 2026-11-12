@@ -1,0 +1,106 @@
+{
+  "source": {
+    "kaggle_dataset": "emmarex/plantdisease",
+    "kaggle_url": "https://www.kaggle.com/datasets/emmarex/plantdisease",
+    "download_tool": "kagglehub.dataset_download (public dataset, no credentials used)",
+    "download_path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1",
+    "class_root": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage",
+    "original_dataset": "PlantVillage (Hughes & Salathe, 2015), arXiv:1511.08060",
+    "notes": [
+      "Archive contains PlantVillage/ and an identical nested PlantVillage/PlantVillage/ copy; only the outer copy is indexed.",
+      "Only folders starting with 'Tomato' are used; Pepper and Potato folders are excluded."
+    ],
+    "kaggle_uploader": "Tairu Oluwafemi Emmanuel",
+    "kaggle_license_as_listed": "Unknown (as shown on the Kaggle dataset page, checked 2026-11-03)",
+    "kaggle_acknowledgement": "Uploader states the dataset was taken from spMohanty's GitHub repo",
+    "upstream_repository": "https://github.com/spMohanty/PlantVillage-Dataset",
+    "original_publication": "Hughes & Salathe (2015), 'An open access repository of images on plant health...', arXiv:1511.08060",
+    "usage_note": "Academic, non-commercial research/education; attribute PlantVillage (Hughes & Salathe) and the Kaggle listing."
+  },
+  "num_classes": 10,
+  "classes": [
+    "Tomato_Bacterial_spot",
+    "Tomato_Early_blight",
+    "Tomato_Late_blight",
+    "Tomato_Leaf_Mold",
+    "Tomato_Septoria_leaf_spot",
+    "Tomato_Spider_mites_Two_spotted_spider_mite",
+    "Tomato__Target_Spot",
+    "Tomato__Tomato_YellowLeaf__Curl_Virus",
+    "Tomato__Tomato_mosaic_virus",
+    "Tomato_healthy"
+  ],
+  "display_names": {
+    "Tomato_Bacterial_spot": "Bacterial spot",
+    "Tomato_Early_blight": "Early blight",
+    "Tomato_Late_blight": "Late blight",
+    "Tomato_Leaf_Mold": "Leaf Mold",
+    "Tomato_Septoria_leaf_spot": "Septoria leaf spot",
+    "Tomato_Spider_mites_Two_spotted_spider_mite": "Spider mites Two spotted spider mite",
+    "Tomato__Target_Spot": "Target Spot",
+    "Tomato__Tomato_YellowLeaf__Curl_Virus": "Tomato Yellow Leaf Curl Virus",
+    "Tomato__Tomato_mosaic_virus": "Tomato mosaic virus",
+    "Tomato_healthy": "Healthy"
+  },
+  "total_files_indexed": 16011,
+  "corrupt_or_unreadable": 0,
+  "corrupt_files": [],
+  "usable_images": 16011,
+  "class_counts": {
+    "Tomato_Bacterial_spot": 2127,
+    "Tomato_Early_blight": 1000,
+    "Tomato_Late_blight": 1909,
+    "Tomato_Leaf_Mold": 952,
+    "Tomato_Septoria_leaf_spot": 1771,
+    "Tomato_Spider_mites_Two_spotted_spider_mite": 1676,
+    "Tomato__Target_Spot": 1404,
+    "Tomato__Tomato_YellowLeaf__Curl_Virus": 3208,
+    "Tomato__Tomato_mosaic_virus": 373,
+    "Tomato_healthy": 1591
+  },
+  "imbalance_ratio_max_over_min": 8.6,
+  "image_modes": {
+    "RGB": 16011
+  },
+  "image_formats": {
+    "JPEG": 16011
+  },
+  "image_dimensions": {
+    "256x256": 16011
+  },
+  "file_size_bytes": {
+    "min": 3440,
+    "median": 16389,
+    "max": 28770
+  },
+  "duplicates": {
+    "images": 16011,
+    "unique_groups": 15977,
+    "groups_with_duplicates": 34,
+    "images_in_duplicate_groups": 68,
+    "exact_duplicate_images": 28,
+    "near_duplicate_images": 40,
+    "largest_group_size": 2,
+    "groups_spanning_multiple_classes": 2,
+    "dhash_hamming_threshold": 4
+  },
+  "splits": {
+    "counts": {
+      "train": 11208,
+      "val": 2404,
+      "test": 2399
+    },
+    "fractions": {
+      "train": 0.7,
+      "val": 0.1501,
+      "test": 0.1498
+    },
+    "leakage_free": true,
+    "seed": 42,
+    "ratios": {
+      "train": 0.7,
+      "val": 0.15,
+      "test": 0.15
+    }
+  }
+}

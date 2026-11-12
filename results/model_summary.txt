@@ -1,0 +1,23 @@
+Backbone: resnet18 (ImageNet pretrained=True)
+Trainable backbone stages: ['layer3', 'layer4']; frozen: ['conv1', 'bn1', 'layer1', 'layer2']
+MLP head: Linear(512->256) -> ReLU -> Dropout(0.3) -> Linear(256->10)
+
+Tensor shapes (batch of 1):
+  input                            [1, 3, 224, 224]
+  stem (conv1+bn+relu+maxpool)     [1, 64, 56, 56]
+  layer1                           [1, 64, 56, 56]
+  layer2                           [1, 128, 28, 28]
+  layer3                           [1, 256, 14, 14]
+  layer4 (Grad-CAM target)         [1, 512, 7, 7]
+  global avg pool + flatten        [1, 512]
+  head.fc1 + ReLU (+Dropout)       [1, 256]
+  head.fc2 logits                  [1, 10]
+
+Parameters:
+  stem     total=      9,536  trainable=          0  frozen=      9,536
+  layer1   total=    147,968  trainable=          0  frozen=    147,968
+  layer2   total=    525,568  trainable=          0  frozen=    525,568
+  layer3   total=  2,099,712  trainable=  2,099,712  frozen=          0
+  layer4   total=  8,393,728  trainable=  8,393,728  frozen=          0
+  head     total=    133,898  trainable=    133,898  frozen=          0
+  total    total= 11,310,410  trainable= 10,627,338  frozen=    683,072

@@ -1,0 +1,14 @@
+gradio==6.31.0
+ipykernel==7.4.0
+jupyter==1.1.1
+kagglehub==1.0.3
+matplotlib==3.11.2
+nbconvert==7.17.2
+nbformat==5.11.1
+numpy==2.5.4
+pandas==3.1.0
+pillow==12.3.0
+scikit-learn==1.9.1
+seaborn==0.13.2
+torch==2.15.0
+torchvision==0.29.2

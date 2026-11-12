@@ -1,0 +1,19 @@
+Test set evaluation of models/best_model.pth (epoch 15), device=mps
+images=2399  accuracy=0.9946  macro-P=0.9943  macro-R=0.9945  macro-F1=0.9944  weighted-F1=0.9946
+
+                                      precision    recall  f1-score   support
+
+                      Bacterial spot     1.0000    0.9969    0.9984       319
+                        Early blight     0.9801    0.9867    0.9834       150
+                         Late blight     0.9861    0.9930    0.9895       286
+                           Leaf Mold     1.0000    1.0000    1.0000       143
+                  Septoria leaf spot     1.0000    0.9962    0.9981       265
+Spider mites Two spotted spider mite     0.9767    1.0000    0.9882       251
+                         Target Spot     1.0000    0.9762    0.9880       210
+       Tomato Yellow Leaf Curl Virus     1.0000    0.9958    0.9979       481
+                 Tomato mosaic virus     1.0000    1.0000    1.0000        56
+                             Healthy     1.0000    1.0000    1.0000       238
+
+                            accuracy                         0.9946      2399
+                           macro avg     0.9943    0.9945    0.9944      2399
+                        weighted avg     0.9947    0.9946    0.9946      2399

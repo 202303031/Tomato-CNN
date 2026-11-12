@@ -1,0 +1,18 @@
+{
+  "kaggle_dataset": "emmarex/plantdisease",
+  "kaggle_url": "https://www.kaggle.com/datasets/emmarex/plantdisease",
+  "download_tool": "kagglehub.dataset_download (public dataset, no credentials used)",
+  "download_path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1",
+  "class_root": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage",
+  "original_dataset": "PlantVillage (Hughes & Salathe, 2015), arXiv:1511.08060",
+  "notes": [
+    "Archive contains PlantVillage/ and an identical nested PlantVillage/PlantVillage/ copy; only the outer copy is indexed.",
+    "Only folders starting with 'Tomato' are used; Pepper and Potato folders are excluded."
+  ],
+  "kaggle_uploader": "Tairu Oluwafemi Emmanuel",
+  "kaggle_license_as_listed": "Unknown (as shown on the Kaggle dataset page, checked 2026-11-03)",
+  "kaggle_acknowledgement": "Uploader states the dataset was taken from spMohanty's GitHub repo",
+  "upstream_repository": "https://github.com/spMohanty/PlantVillage-Dataset",
+  "original_publication": "Hughes & Salathe (2015), 'An open access repository of images on plant health...', arXiv:1511.08060",
+  "usage_note": "Academic, non-commercial research/education; attribute PlantVillage (Hughes & Salathe) and the Kaggle listing."
+}

@@ -1,0 +1,12 @@
+{
+  "backbone": "resnet18",
+  "pretrained": true,
+  "num_classes": 10,
+  "img_size": 224,
+  "hidden_dim": 256,
+  "dropout": 0.3,
+  "trainable_stages": [
+    "layer3",
+    "layer4"
+  ]
+}

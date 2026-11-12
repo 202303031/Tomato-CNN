@@ -1,0 +1,242 @@
+{
+  "test_images": 2399,
+  "accuracy": 0.9945810754481034,
+  "macro_precision": 0.9942897257940292,
+  "macro_recall": 0.9944797750562226,
+  "macro_f1": 0.9943532975039041,
+  "weighted_precision": 0.9946593260310373,
+  "weighted_recall": 0.9945810754481034,
+  "weighted_f1": 0.9945895196982817,
+  "per_class": {
+    "Tomato_Bacterial_spot": {
+      "precision": 1.0,
+      "recall": 0.9968652037617555,
+      "f1": 0.9984301412872841,
+      "support": 319
+    },
+    "Tomato_Early_blight": {
+      "precision": 0.9801324503311258,
+      "recall": 0.9866666666666667,
+      "f1": 0.9833887043189369,
+      "support": 150
+    },
+    "Tomato_Late_blight": {
+      "precision": 0.9861111111111112,
+      "recall": 0.993006993006993,
+      "f1": 0.9895470383275261,
+      "support": 286
+    },
+    "Tomato_Leaf_Mold": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 143
+    },
+    "Tomato_Septoria_leaf_spot": {
+      "precision": 1.0,
+      "recall": 0.9962264150943396,
+      "f1": 0.998109640831758,
+      "support": 265
+    },
+    "Tomato_Spider_mites_Two_spotted_spider_mite": {
+      "precision": 0.9766536964980544,
+      "recall": 1.0,
+      "f1": 0.9881889763779528,
+      "support": 251
+    },
+    "Tomato__Target_Spot": {
+      "precision": 1.0,
+      "recall": 0.9761904761904762,
+      "f1": 0.9879518072289156,
+      "support": 210
+    },
+    "Tomato__Tomato_YellowLeaf__Curl_Virus": {
+      "precision": 1.0,
+      "recall": 0.9958419958419958,
+      "f1": 0.9979166666666667,
+      "support": 481
+    },
+    "Tomato__Tomato_mosaic_virus": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 56
+    },
+    "Tomato_healthy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 238
+    }
+  },
+  "confusion_matrix": [
+    [
+      318,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      148,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      284,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      143,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      264,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      251,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      4,
+      205,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      479,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      56,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      238
+    ]
+  ],
+  "top_confusions": [
+    {
+      "count": 4,
+      "true": "Tomato__Target_Spot",
+      "pred": "Tomato_Spider_mites_Two_spotted_spider_mite"
+    },
+    {
+      "count": 2,
+      "true": "Tomato__Tomato_YellowLeaf__Curl_Virus",
+      "pred": "Tomato_Spider_mites_Two_spotted_spider_mite"
+    },
+    {
+      "count": 2,
+      "true": "Tomato_Late_blight",
+      "pred": "Tomato_Early_blight"
+    },
+    {
+      "count": 2,
+      "true": "Tomato_Early_blight",
+      "pred": "Tomato_Late_blight"
+    },
+    {
+      "count": 1,
+      "true": "Tomato__Target_Spot",
+      "pred": "Tomato_Early_blight"
+    },
+    {
+      "count": 1,
+      "true": "Tomato_Septoria_leaf_spot",
+      "pred": "Tomato_Late_blight"
+    },
+    {
+      "count": 1,
+      "true": "Tomato_Bacterial_spot",
+      "pred": "Tomato_Late_blight"
+    }
+  ],
+  "mean_confidence_correct": 0.9490941166877747,
+  "mean_confidence_incorrect": 0.7136393189430237,
+  "n_incorrect": 13,
+  "checkpoint_epoch": 15,
+  "validation_check": {
+    "recorded_val_acc": 0.9970881863560732,
+    "recomputed_val_acc": 0.9970881863560732,
+    "recorded_val_macro_f1": 0.9974096042171825,
+    "recomputed_val_macro_f1": 0.9974096042171825
+  },
+  "device": "mps"
+}

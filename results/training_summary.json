@@ -1,0 +1,72 @@
+{
+  "device": "mps",
+  "environment": {
+    "python": "3.12.15",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "mps_built": true,
+    "mps_available": true,
+    "cuda_available": false,
+    "selected_device": "mps",
+    "cpu_count": 10
+  },
+  "seed": 42,
+  "hyperparameters": {
+    "epochs": 15,
+    "batch_size": 32,
+    "num_workers": 6,
+    "img_size": 224,
+    "hidden_dim": 256,
+    "dropout": 0.3,
+    "trainable_stages": [
+      "layer3",
+      "layer4"
+    ],
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.05,
+    "patience": 4,
+    "min_delta": 0.0001,
+    "seed": 42,
+    "device": null,
+    "smoke": false,
+    "class_weights": [
+      0.7799,
+      1.1375,
+      0.8234,
+      1.1662,
+      0.8547,
+      0.8787,
+      0.9599,
+      0.635,
+      1.8629,
+      0.9017
+    ],
+    "train_class_counts": [
+      1489,
+      700,
+      1336,
+      666,
+      1240,
+      1173,
+      983,
+      2246,
+      261,
+      1114
+    ],
+    "optimizer": "AdamW",
+    "scheduler": "ReduceLROnPlateau(max, factor=0.5, patience=2) on val macro-F1",
+    "loss": "CrossEntropyLoss(inverse-sqrt class weights, label_smoothing=0.05)"
+  },
+  "epochs_run": 15,
+  "best_epoch": 15,
+  "best_val_macro_f1": 0.9974096042171825,
+  "best_val_acc": 0.9970881863560732,
+  "total_training_seconds": 1006.7775809764862,
+  "mean_epoch_seconds": 67.06741355260213,
+  "checkpoint": "/Users/sidd/Downloads/Tomato_Leaf_Disease_Detection/models/best_model.pth",
+  "smoke_run": false
+}

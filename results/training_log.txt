@@ -1,0 +1,41 @@
+Environment: {'python': '3.12.15', 'platform': 'macOS-26.5.1-arm64-arm-64bit', 'machine': 'arm64', 'torch': '2.15.0', 'torchvision': '0.29.2', 'mps_built': True, 'mps_available': True, 'cuda_available': False, 'selected_device': 'mps', 'cpu_count': 10}
+Backbone: resnet18 (ImageNet pretrained=True)
+Trainable backbone stages: ['layer3', 'layer4']; frozen: ['conv1', 'bn1', 'layer1', 'layer2']
+MLP head: Linear(512->256) -> ReLU -> Dropout(0.3) -> Linear(256->10)
+
+Tensor shapes (batch of 1):
+  input                            [1, 3, 224, 224]
+  stem (conv1+bn+relu+maxpool)     [1, 64, 56, 56]
+  layer1                           [1, 64, 56, 56]
+  layer2                           [1, 128, 28, 28]
+  layer3                           [1, 256, 14, 14]
+  layer4 (Grad-CAM target)         [1, 512, 7, 7]
+  global avg pool + flatten        [1, 512]
+  head.fc1 + ReLU (+Dropout)       [1, 256]
+  head.fc2 logits                  [1, 10]
+
+Parameters:
+  stem     total=      9,536  trainable=          0  frozen=      9,536
+  layer1   total=    147,968  trainable=          0  frozen=    147,968
+  layer2   total=    525,568  trainable=          0  frozen=    525,568
+  layer3   total=  2,099,712  trainable=  2,099,712  frozen=          0
+  layer4   total=  8,393,728  trainable=  8,393,728  frozen=          0
+  head     total=    133,898  trainable=    133,898  frozen=          0
+  total    total= 11,310,410  trainable= 10,627,338  frozen=    683,072
+[01/15] train loss 0.7265 acc 0.8711 | val loss 0.5101 acc 0.9438 macroF1 0.9378 | lr 1.0e-04/1.0e-03 | 101s
+[02/15] train loss 0.4929 acc 0.9552 | val loss 0.4425 acc 0.9759 macroF1 0.9758 | lr 1.0e-04/1.0e-03 | 47s
+[03/15] train loss 0.4458 acc 0.9692 | val loss 0.3978 acc 0.9867 macroF1 0.9879 | lr 1.0e-04/1.0e-03 | 57s
+[04/15] train loss 0.4235 acc 0.9751 | val loss 0.3963 acc 0.9854 macroF1 0.9867 | lr 1.0e-04/1.0e-03 | 62s
+[05/15] train loss 0.4089 acc 0.9801 | val loss 0.3979 acc 0.9842 macroF1 0.9837 | lr 1.0e-04/1.0e-03 | 64s
+[06/15] train loss 0.3891 acc 0.9868 | val loss 0.3843 acc 0.9867 macroF1 0.9855 | lr 5.0e-05/5.0e-04 | 57s
+[07/15] train loss 0.3670 acc 0.9927 | val loss 0.3608 acc 0.9942 macroF1 0.9939 | lr 5.0e-05/5.0e-04 | 68s
+[08/15] train loss 0.3624 acc 0.9933 | val loss 0.3586 acc 0.9954 macroF1 0.9958 | lr 5.0e-05/5.0e-04 | 67s
+[09/15] train loss 0.3591 acc 0.9945 | val loss 0.3571 acc 0.9950 macroF1 0.9947 | lr 5.0e-05/5.0e-04 | 62s
+[10/15] train loss 0.3579 acc 0.9934 | val loss 0.3541 acc 0.9958 macroF1 0.9957 | lr 5.0e-05/5.0e-04 | 67s
+[11/15] train loss 0.3623 acc 0.9939 | val loss 0.3512 acc 0.9950 macroF1 0.9948 | lr 2.5e-05/2.5e-04 | 69s
+[12/15] train loss 0.3486 acc 0.9966 | val loss 0.3461 acc 0.9963 macroF1 0.9962 | lr 2.5e-05/2.5e-04 | 68s
+[13/15] train loss 0.3465 acc 0.9971 | val loss 0.3498 acc 0.9958 macroF1 0.9958 | lr 2.5e-05/2.5e-04 | 71s
+[14/15] train loss 0.3446 acc 0.9977 | val loss 0.3445 acc 0.9971 macroF1 0.9973 | lr 2.5e-05/2.5e-04 | 72s
+[15/15] train loss 0.3445 acc 0.9970 | val loss 0.3486 acc 0.9971 macroF1 0.9974 | lr 2.5e-05/2.5e-04 | 74s
+Done. Best val macro-F1 0.9974 at epoch 15; total 16.8 min
+EXIT CODE 0

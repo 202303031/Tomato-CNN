@@ -1,0 +1,211 @@
+{
+  "target_layer": "layer4",
+  "images": [
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_Bacterial_spot/d9461bb6-7502-4f29-80eb-e691b7f5619f___GCREC_Bact.Sp 6293.JPG",
+      "true": "Tomato_Bacterial_spot",
+      "pred": "Tomato_Bacterial_spot",
+      "raw_max": 0.14010635018348694,
+      "raw_nonzero_fraction": 1.0,
+      "norm_min": 0.0,
+      "norm_max": 1.0,
+      "norm_std": 0.25101858377456665,
+      "blank": false,
+      "uniform": false,
+      "normalised_correctly": true
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_Early_blight/a1e875bd-5c06-4031-b0c0-9413d754df0e___RS_Erly.B 8221.JPG",
+      "true": "Tomato_Early_blight",
+      "pred": "Tomato_Early_blight",
+      "raw_max": 0.15661022067070007,
+      "raw_nonzero_fraction": 1.0,
+      "norm_min": 0.0,
+      "norm_max": 1.0,
+      "norm_std": 0.2132102996110916,
+      "blank": false,
+      "uniform": false,
+      "normalised_correctly": true
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_Late_blight/8f27364b-aafa-49a8-b288-e442cb8bde11___RS_Late.B 6285.JPG",
+      "true": "Tomato_Late_blight",
+      "pred": "Tomato_Late_blight",
+      "raw_max": 0.14317867159843445,
+      "raw_nonzero_fraction": 1.0,
+      "norm_min": 0.0,
+      "norm_max": 1.0,
+      "norm_std": 0.2384996861219406,
+      "blank": false,
+      "uniform": false,
+      "normalised_correctly": true
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_Leaf_Mold/4d65825b-367d-4f8e-aa17-c19ee1e631e1___Crnl_L.Mold 6954.JPG",
+      "true": "Tomato_Leaf_Mold",
+      "pred": "Tomato_Leaf_Mold",
+      "raw_max": 0.1554255336523056,
+      "raw_nonzero_fraction": 1.0,
+      "norm_min": 0.0,
+      "norm_max": 1.0,
+      "norm_std": 0.1962786167860031,
+      "blank": false,
+      "uniform": false,
+      "normalised_correctly": true
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_Septoria_leaf_spot/4d19cd34-0257-4c33-99eb-c1036c018b71___Matt.S_CG 7843.JPG",
+      "true": "Tomato_Septoria_leaf_spot",
+      "pred": "Tomato_Septoria_leaf_spot",
+      "raw_max": 0.1300799399614334,
+      "raw_nonzero_fraction": 1.0,
+      "norm_min": 0.0,
+      "norm_max": 1.0,
+      "norm_std": 0.22680546343326569,
+      "blank": false,
+      "uniform": false,
+      "normalised_correctly": true
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_Spider_mites_Two_spotted_spider_mite/10e51f80-5ecc-4780-81ee-5d9db5aa4e53___Com.G_SpM_FL 9408.JPG",
+      "true": "Tomato_Spider_mites_Two_spotted_spider_mite",
+      "pred": "Tomato_Spider_mites_Two_spotted_spider_mite",
+      "raw_max": 0.13538065552711487,
+      "raw_nonzero_fraction": 1.0,
+      "norm_min": 0.0,
+      "norm_max": 1.0,
+      "norm_std": 0.1576913595199585,
+      "blank": false,
+      "uniform": false,
+      "normalised_correctly": true
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato__Target_Spot/13251526-fecf-42d9-9d4e-81a06c5475e5___Com.G_TgS_FL 8376.JPG",
+      "true": "Tomato__Target_Spot",
+      "pred": "Tomato__Target_Spot",
+      "raw_max": 0.11886588484048843,
+      "raw_nonzero_fraction": 1.0,
+      "norm_min": 0.0,
+      "norm_max": 1.0,
+      "norm_std": 0.2838123142719269,
+      "blank": false,
+      "uniform": false,
+      "normalised_correctly": true
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato__Tomato_YellowLeaf__Curl_Virus/0223bec0-2d13-42aa-b653-3aa3ee502b85___YLCV_GCREC 2507.JPG",
+      "true": "Tomato__Tomato_YellowLeaf__Curl_Virus",
+      "pred": "Tomato__Tomato_YellowLeaf__Curl_Virus",
+      "raw_max": 0.11537961661815643,
+      "raw_nonzero_fraction": 1.0,
+      "norm_min": 0.0,
+      "norm_max": 1.0,
+      "norm_std": 0.2228374183177948,
+      "blank": false,
+      "uniform": false,
+      "normalised_correctly": true
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato__Tomato_mosaic_virus/20182b2d-dfda-4ef1-89cc-17856e051b00___PSU_CG 2072.JPG",
+      "true": "Tomato__Tomato_mosaic_virus",
+      "pred": "Tomato__Tomato_mosaic_virus",
+      "raw_max": 0.26828640699386597,
+      "raw_nonzero_fraction": 1.0,
+      "norm_min": 0.0,
+      "norm_max": 1.0,
+      "norm_std": 0.24488277733325958,
+      "blank": false,
+      "uniform": false,
+      "normalised_correctly": true
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_healthy/d45c5eb7-c7b7-430b-9b2c-917a4a34315e___RS_HL 0151.JPG",
+      "true": "Tomato_healthy",
+      "pred": "Tomato_healthy",
+      "raw_max": 0.12595310807228088,
+      "raw_nonzero_fraction": 1.0,
+      "norm_min": 0.0,
+      "norm_max": 1.0,
+      "norm_std": 0.19050928950309753,
+      "blank": false,
+      "uniform": false,
+      "normalised_correctly": true
+    }
+  ],
+  "class_specificity": [
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_Bacterial_spot/d9461bb6-7502-4f29-80eb-e691b7f5619f___GCREC_Bact.Sp 6293.JPG",
+      "top1_idx": 0,
+      "top2_idx": 1,
+      "cam_correlation": -0.7605224097673818,
+      "mean_abs_difference": 0.4704360067844391
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_Early_blight/a1e875bd-5c06-4031-b0c0-9413d754df0e___RS_Erly.B 8221.JPG",
+      "top1_idx": 1,
+      "top2_idx": 2,
+      "cam_correlation": -0.8559356103979554,
+      "mean_abs_difference": 0.42070621252059937
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_Late_blight/8f27364b-aafa-49a8-b288-e442cb8bde11___RS_Late.B 6285.JPG",
+      "top1_idx": 2,
+      "top2_idx": 1,
+      "cam_correlation": 0.24853471325544546,
+      "mean_abs_difference": 0.3622138500213623
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_Leaf_Mold/4d65825b-367d-4f8e-aa17-c19ee1e631e1___Crnl_L.Mold 6954.JPG",
+      "top1_idx": 3,
+      "top2_idx": 8,
+      "cam_correlation": 0.668987598661372,
+      "mean_abs_difference": 0.1486707627773285
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_Septoria_leaf_spot/4d19cd34-0257-4c33-99eb-c1036c018b71___Matt.S_CG 7843.JPG",
+      "top1_idx": 4,
+      "top2_idx": 6,
+      "cam_correlation": -0.8514750484843868,
+      "mean_abs_difference": 0.5517761707305908
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_Spider_mites_Two_spotted_spider_mite/10e51f80-5ecc-4780-81ee-5d9db5aa4e53___Com.G_SpM_FL 9408.JPG",
+      "top1_idx": 5,
+      "top2_idx": 8,
+      "cam_correlation": 0.7494590536448529,
+      "mean_abs_difference": 0.15883281826972961
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato__Target_Spot/13251526-fecf-42d9-9d4e-81a06c5475e5___Com.G_TgS_FL 8376.JPG",
+      "top1_idx": 6,
+      "top2_idx": 8,
+      "cam_correlation": 0.4221553407757157,
+      "mean_abs_difference": 0.24889308214187622
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato__Tomato_YellowLeaf__Curl_Virus/0223bec0-2d13-42aa-b653-3aa3ee502b85___YLCV_GCREC 2507.JPG",
+      "top1_idx": 7,
+      "top2_idx": 8,
+      "cam_correlation": 0.5707404453129913,
+      "mean_abs_difference": 0.18145816028118134
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato__Tomato_mosaic_virus/20182b2d-dfda-4ef1-89cc-17856e051b00___PSU_CG 2072.JPG",
+      "top1_idx": 8,
+      "top2_idx": 1,
+      "cam_correlation": NaN,
+      "mean_abs_difference": 0.29768240451812744
+    },
+    {
+      "path": "data/raw/kagglehub_cache/datasets/emmarex/plantdisease/versions/1/PlantVillage/Tomato_healthy/d45c5eb7-c7b7-430b-9b2c-917a4a34315e___RS_HL 0151.JPG",
+      "top1_idx": 9,
+      "top2_idx": 8,
+      "cam_correlation": 0.31296807452434633,
+      "mean_abs_difference": 0.1885976642370224
+    }
+  ],
+  "n_blank": 0,
+  "n_uniform": 0,
+  "all_normalised": true,
+  "mean_cam_correlation_top1_vs_top2": 0.056101350836111084
+}
